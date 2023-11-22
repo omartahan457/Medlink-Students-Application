@@ -1,0 +1,6 @@
+package com.mycompany.medlinktestapplication
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}

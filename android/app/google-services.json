@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "666486131748",
+    "project_id": "login-app-3417e",
+    "storage_bucket": "login-app-3417e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666486131748:android:89a9e3bc86b68619cfdcb1",
+        "android_client_info": {
+          "package_name": "com.mycompany.medlinktestapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXKhlAXDFY1giSojjNbEapzGtLgJXKzek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
