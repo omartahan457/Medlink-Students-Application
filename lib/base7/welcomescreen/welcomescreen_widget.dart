@@ -6,11 +6,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:lottie/lottie.dart';
+
 import 'welcomescreen_model.dart';
 export 'welcomescreen_model.dart';
 
 class WelcomescreenWidget extends StatefulWidget {
-  const WelcomescreenWidget({super.key});
+  const WelcomescreenWidget({Key? key}) : super(key: key);
 
   @override
   _WelcomescreenWidgetState createState() => _WelcomescreenWidgetState();
@@ -187,7 +188,7 @@ class _WelcomescreenWidgetState extends State<WelcomescreenWidget>
                       decoration: const BoxDecoration(),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Container(
                             width: 161.0,
@@ -231,7 +232,7 @@ class _WelcomescreenWidgetState extends State<WelcomescreenWidget>
                           ),
                           Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
-                                44.0, 8.0, 44.0, 0.0),
+                                44.0, 18.0, 44.0, 0.0),
                             child: Text(
                               'Thanks for downloading the Medlink Students application! To access your account, please sign in with your login credentials and get started for taking OFF!',
                               textAlign: TextAlign.center,
@@ -244,12 +245,16 @@ class _WelcomescreenWidgetState extends State<WelcomescreenWidget>
                             ).animateOnPageLoad(
                                 animationsMap['textOnPageLoadAnimation2']!),
                           ),
-                          Lottie.asset(
-                            'assets/lottie_animations/animation_lnbm08pv.json',
-                            width: 100.0,
-                            height: 100.0,
-                            fit: BoxFit.cover,
-                            animate: true,
+                          Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                0.0, 20.0, 0.0, 0.0),
+                            child: Lottie.asset(
+                              'assets/lottie_animations/animation_lnbm08pv.json',
+                              width: 100.0,
+                              height: 100.0,
+                              fit: BoxFit.cover,
+                              animate: true,
+                            ),
                           ),
                           Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
@@ -259,12 +264,10 @@ class _WelcomescreenWidgetState extends State<WelcomescreenWidget>
                               children: [
                                 Expanded(
                                   child: Align(
-                                    alignment:
-                                        const AlignmentDirectional(0.00, 0.00),
+                                    alignment: const AlignmentDirectional(0.00, 0.00),
                                     child: Padding(
-                                      padding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 8.0, 16.0),
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 20.0, 8.0, 16.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
                                           context.pushNamed(
@@ -286,11 +289,12 @@ class _WelcomescreenWidgetState extends State<WelcomescreenWidget>
                                         options: FFButtonOptions(
                                           width: 230.0,
                                           height: 52.0,
-                                          padding: const EdgeInsetsDirectional
-                                              .fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 0.0),
                                           iconPadding:
-                                              const EdgeInsetsDirectional
-                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 0.0),
                                           color: FlutterFlowTheme.of(context)
                                               .customColor1,
                                           textStyle:
