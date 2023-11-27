@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -7,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:lottie/lottie.dart';
+
 import 'login_page_model.dart';
 export 'login_page_model.dart';
 
@@ -14,6 +17,7 @@ class LoginPageWidget extends StatefulWidget {
   const LoginPageWidget({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _LoginPageWidgetState createState() => _LoginPageWidgetState();
 }
 
@@ -87,8 +91,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
               child: Align(
                 alignment: const AlignmentDirectional(0.00, 1.00),
                 child: Padding(
-                  padding:
-                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
@@ -172,8 +175,8 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                   children: [
                                     Expanded(
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional
-                                            .fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 0.0, 10.0),
                                         child: TextFormField(
                                           controller:
                                               _model.emailAddressController,
@@ -184,27 +187,27 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                           obscureText: false,
                                           decoration: InputDecoration(
                                             labelText: 'Email Address',
-                                            labelStyle: FlutterFlowTheme.of(
-                                                    context)
-                                                .titleSmall
-                                                .override(
-                                                  fontFamily: 'Outfit',
-                                                  color:
-                                                      const Color(0xFF57636C),
-                                                  fontSize: 16.0,
-                                                  fontWeight: FontWeight.normal,
-                                                ),
+                                            labelStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleSmall
+                                                    .override(
+                                                      fontFamily: 'Outfit',
+                                                      color: const Color(0xFF57636C),
+                                                      fontSize: 16.0,
+                                                      fontWeight:
+                                                          FontWeight.normal,
+                                                    ),
                                             hintText: 'Example@example.com',
-                                            hintStyle: FlutterFlowTheme.of(
-                                                    context)
-                                                .bodySmall
-                                                .override(
-                                                  fontFamily: 'Outfit',
-                                                  color:
-                                                      const Color(0xFF57636C),
-                                                  fontSize: 14.0,
-                                                  fontWeight: FontWeight.normal,
-                                                ),
+                                            hintStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodySmall
+                                                    .override(
+                                                      fontFamily: 'Outfit',
+                                                      color: const Color(0xFF57636C),
+                                                      fontSize: 14.0,
+                                                      fontWeight:
+                                                          FontWeight.normal,
+                                                    ),
                                             enabledBorder: OutlineInputBorder(
                                               borderSide: const BorderSide(
                                                 color: Color(0xFFF1F4F8),
@@ -241,8 +244,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                             filled: true,
                                             fillColor: Colors.white,
                                             contentPadding:
-                                                const EdgeInsetsDirectional
-                                                    .fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 24.0, 0.0, 24.0),
                                           ),
                                           style: FlutterFlowTheme.of(context)
@@ -274,8 +276,8 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                   children: [
                                     Expanded(
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional
-                                            .fromSTEB(0.0, 0.0, 0.0, 10.0),
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 0.0, 10.0),
                                         child: TextFormField(
                                           controller: _model.passwordController,
                                           focusNode: _model.passwordFocusNode,
@@ -286,28 +288,28 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                               !_model.passwordVisibility,
                                           decoration: InputDecoration(
                                             labelText: 'Password',
-                                            labelStyle: FlutterFlowTheme.of(
-                                                    context)
-                                                .titleSmall
-                                                .override(
-                                                  fontFamily: 'Outfit',
-                                                  color:
-                                                      const Color(0xFF57636C),
-                                                  fontSize: 16.0,
-                                                  fontWeight: FontWeight.normal,
-                                                ),
+                                            labelStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleSmall
+                                                    .override(
+                                                      fontFamily: 'Outfit',
+                                                      color: const Color(0xFF57636C),
+                                                      fontSize: 16.0,
+                                                      fontWeight:
+                                                          FontWeight.normal,
+                                                    ),
                                             hintText:
                                                 'Enter your password here...',
-                                            hintStyle: FlutterFlowTheme.of(
-                                                    context)
-                                                .bodySmall
-                                                .override(
-                                                  fontFamily: 'Outfit',
-                                                  color:
-                                                      const Color(0xFF57636C),
-                                                  fontSize: 14.0,
-                                                  fontWeight: FontWeight.normal,
-                                                ),
+                                            hintStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodySmall
+                                                    .override(
+                                                      fontFamily: 'Outfit',
+                                                      color: const Color(0xFF57636C),
+                                                      fontSize: 14.0,
+                                                      fontWeight:
+                                                          FontWeight.normal,
+                                                    ),
                                             errorStyle: FlutterFlowTheme.of(
                                                     context)
                                                 .titleMedium
@@ -355,8 +357,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                             filled: true,
                                             fillColor: Colors.white,
                                             contentPadding:
-                                                const EdgeInsetsDirectional
-                                                    .fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 24.0, 0.0, 24.0),
                                             suffixIcon: InkWell(
                                               onTap: () => setState(
@@ -402,8 +403,8 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                       MainAxisAlignment.spaceAround,
                                   children: [
                                     Align(
-                                      alignment: const AlignmentDirectional(
-                                          0.00, 1.00),
+                                      alignment:
+                                          const AlignmentDirectional(0.00, 1.00),
                                       child: FFButtonWidget(
                                         onPressed: () async {
                                           GoRouter.of(context)
@@ -435,11 +436,12 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                         text: 'Login',
                                         options: FFButtonOptions(
                                           width: 100.0,
-                                          padding: const EdgeInsetsDirectional
-                                              .fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 0.0),
                                           iconPadding:
-                                              const EdgeInsetsDirectional
-                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 0.0),
                                           color: const Color(0xFF4B39EF),
                                           textStyle:
                                               FlutterFlowTheme.of(context)
@@ -459,8 +461,8 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                       ),
                                     ),
                                     Align(
-                                      alignment: const AlignmentDirectional(
-                                          0.00, 1.00),
+                                      alignment:
+                                          const AlignmentDirectional(0.00, 1.00),
                                       child: FFButtonWidget(
                                         onPressed: () async {
                                           context
@@ -473,11 +475,12 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                         ),
                                         options: FFButtonOptions(
                                           width: 220.0,
-                                          padding: const EdgeInsetsDirectional
-                                              .fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 0.0),
                                           iconPadding:
-                                              const EdgeInsetsDirectional
-                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 0.0),
                                           color: Colors.white,
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
@@ -499,81 +502,90 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                           hoverColor:
                                               FlutterFlowTheme.of(context)
                                                   .customColor1,
-                                          hoverTextColor:
-                                              const Color(0xFFF6F6F6),
+                                          hoverTextColor: const Color(0xFFF6F6F6),
                                         ),
                                       ),
                                     ),
                                   ],
                                 ),
                               ),
-                              Row(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Card(
-                                    clipBehavior: Clip.antiAliasWithSaveLayer,
-                                    color: Colors.white,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(40.0),
-                                    ),
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(40.0),
-                                      child: Image.asset(
-                                        'assets/images/Medlink_logo.png',
-                                        width: 60.0,
-                                        height: 60.0,
-                                        fit: BoxFit.cover,
+                              Padding(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    10.0, 0.0, 0.0, 10.0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Card(
+                                      clipBehavior: Clip.antiAliasWithSaveLayer,
+                                      color: Colors.white,
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(40.0),
                                       ),
-                                    ),
-                                  ),
-                                  Column(
-                                    mainAxisSize: MainAxisSize.max,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Padding(
-                                        padding: const EdgeInsetsDirectional
-                                            .fromSTEB(0.0, 4.0, 0.0, 0.0),
-                                        child: Text(
-                                          'By logging in I agree',
-                                          textAlign: TextAlign.center,
-                                          style: FlutterFlowTheme.of(context)
-                                              .labelMedium
-                                              .override(
-                                                fontFamily: 'Plus Jakarta Sans',
-                                                color: Colors.black,
-                                                fontSize: 14.0,
-                                                fontWeight: FontWeight.w800,
-                                              ),
+                                      child: ClipRRect(
+                                        borderRadius:
+                                            BorderRadius.circular(40.0),
+                                        child: Image.asset(
+                                          'assets/images/Medlink_logo.png',
+                                          width: 60.0,
+                                          height: 60.0,
+                                          fit: BoxFit.cover,
                                         ),
                                       ),
-                                      Align(
-                                        alignment: const AlignmentDirectional(
-                                            0.00, 0.00),
-                                        child: Padding(
-                                          padding: const EdgeInsetsDirectional
-                                              .fromSTEB(0.0, 4.0, 0.0, 0.0),
+                                    ),
+                                    Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 4.0, 0.0, 0.0),
                                           child: Text(
-                                            'Medlink Students Privacy and Policy ',
+                                            'By logging in I agree',
                                             textAlign: TextAlign.center,
                                             style: FlutterFlowTheme.of(context)
                                                 .labelMedium
                                                 .override(
                                                   fontFamily:
                                                       'Plus Jakarta Sans',
-                                                  color:
-                                                      const Color(0xFF1E67B4),
+                                                  color: Colors.black,
                                                   fontSize: 14.0,
                                                   fontWeight: FontWeight.w800,
                                                 ),
                                           ),
                                         ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
+                                        Align(
+                                          alignment:
+                                              const AlignmentDirectional(0.00, 0.00),
+                                          child: Padding(
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 4.0, 0.0, 0.0),
+                                            child: Text(
+                                              'Medlink Students Privacy and Policy ',
+                                              textAlign: TextAlign.center,
+                                              style: FlutterFlowTheme.of(
+                                                      context)
+                                                  .labelMedium
+                                                  .override(
+                                                    fontFamily:
+                                                        'Plus Jakarta Sans',
+                                                    color: const Color(0xFF1E67B4),
+                                                    fontSize: 14.0,
+                                                    fontWeight: FontWeight.w800,
+                                                  ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
                               ),
                             ],
                           ),

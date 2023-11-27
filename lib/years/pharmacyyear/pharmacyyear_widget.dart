@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -8,6 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+
 import 'pharmacyyear_model.dart';
 export 'pharmacyyear_model.dart';
 
@@ -117,8 +120,7 @@ class _PharmacyyearWidgetState extends State<PharmacyyearWidget>
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Padding(
-                padding:
-                    const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
                 child: Container(
                   width: double.infinity,
                   decoration: const BoxDecoration(
@@ -204,7 +206,7 @@ class _PharmacyyearWidgetState extends State<PharmacyyearWidget>
                                       .displaySmall
                                       .override(
                                         fontFamily: 'Outfit',
-                                        color: const Color(0xFF4B39EF),
+                                        color: const Color(0xFF246FAE),
                                         fontSize: 32.0,
                                         fontWeight: FontWeight.w600,
                                       ),
@@ -220,19 +222,21 @@ class _PharmacyyearWidgetState extends State<PharmacyyearWidget>
               ),
               Align(
                 alignment: const AlignmentDirectional(0.00, 0.00),
-                child: Text(
-                  'Choose your pharmacy subject',
-                  style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Readex Pro',
-                        color: const Color(0xFF15161E),
-                        fontSize: 25.0,
-                        fontWeight: FontWeight.w600,
-                      ),
+                child: Padding(
+                  padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                  child: Text(
+                    'Choose your pharmacy subject',
+                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                          fontFamily: 'Readex Pro',
+                          color: const Color(0xFF15161E),
+                          fontSize: 24.0,
+                          fontWeight: FontWeight.w600,
+                        ),
+                  ),
                 ),
               ),
               Padding(
-                padding:
-                    const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 120.0,
@@ -299,9 +303,8 @@ class _PharmacyyearWidgetState extends State<PharmacyyearWidget>
                                 height: 40.0,
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     24.0, 0.0, 24.0, 0.0),
-                                iconPadding:
-                                    const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 0.0),
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
                                 color:
                                     FlutterFlowTheme.of(context).customColor1,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -327,8 +330,7 @@ class _PharmacyyearWidgetState extends State<PharmacyyearWidget>
                     animationsMap['containerOnPageLoadAnimation1']!),
               ),
               Padding(
-                padding:
-                    const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 120.0,
@@ -392,9 +394,8 @@ class _PharmacyyearWidgetState extends State<PharmacyyearWidget>
                                 height: 40.0,
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     24.0, 0.0, 24.0, 0.0),
-                                iconPadding:
-                                    const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 0.0),
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
                                 color:
                                     FlutterFlowTheme.of(context).customColor1,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -420,8 +421,7 @@ class _PharmacyyearWidgetState extends State<PharmacyyearWidget>
                     animationsMap['containerOnPageLoadAnimation2']!),
               ),
               Padding(
-                padding:
-                    const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 120.0,
@@ -492,9 +492,8 @@ class _PharmacyyearWidgetState extends State<PharmacyyearWidget>
                                 height: 40.0,
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     24.0, 0.0, 24.0, 0.0),
-                                iconPadding:
-                                    const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 0.0),
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
                                 color:
                                     FlutterFlowTheme.of(context).customColor1,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -522,8 +521,7 @@ class _PharmacyyearWidgetState extends State<PharmacyyearWidget>
               Align(
                 alignment: const AlignmentDirectional(-1.00, 1.00),
                 child: Padding(
-                  padding:
-                      const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 0.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed(
@@ -543,10 +541,10 @@ class _PharmacyyearWidgetState extends State<PharmacyyearWidget>
                     ),
                     options: FFButtonOptions(
                       height: 40.0,
-                      padding: const EdgeInsetsDirectional.fromSTEB(
-                          24.0, 0.0, 24.0, 0.0),
-                      iconPadding: const EdgeInsetsDirectional.fromSTEB(
-                          0.0, 0.0, 0.0, 0.0),
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                      iconPadding:
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: Colors.white,
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(

@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -11,7 +13,8 @@ import 'welcomescreen_model.dart';
 export 'welcomescreen_model.dart';
 
 class WelcomescreenWidget extends StatefulWidget {
-  const WelcomescreenWidget({super.key});
+  // ignore: use_super_parameters
+  const WelcomescreenWidget({Key? key}) : super(key: key);
 
   @override
   _WelcomescreenWidgetState createState() => _WelcomescreenWidgetState();
@@ -258,7 +261,7 @@ class _WelcomescreenWidgetState extends State<WelcomescreenWidget>
                           ),
                           Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
-                                16.0, 24.0, 16.0, 44.0),
+                                16.0, 44.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [

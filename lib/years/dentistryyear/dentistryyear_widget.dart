@@ -6,6 +6,7 @@ import '/custom_code/actions/index.dart' as actions;
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
+
 import 'dentistryyear_model.dart';
 export 'dentistryyear_model.dart';
 
@@ -13,6 +14,7 @@ class DentistryyearWidget extends StatefulWidget {
   const DentistryyearWidget({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _DentistryyearWidgetState createState() => _DentistryyearWidgetState();
 }
 
@@ -63,8 +65,7 @@ class _DentistryyearWidgetState extends State<DentistryyearWidget> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Padding(
-                padding:
-                    const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
                 child: Container(
                   width: double.infinity,
                   decoration: const BoxDecoration(
@@ -170,13 +171,13 @@ class _DentistryyearWidgetState extends State<DentistryyearWidget> {
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Readex Pro',
                         color: Colors.black,
-                        fontSize: 25.0,
+                        fontSize: 24.0,
+                        fontWeight: FontWeight.w600,
                       ),
                 ),
               ),
               Padding(
-                padding:
-                    const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 120.0,
@@ -243,9 +244,8 @@ class _DentistryyearWidgetState extends State<DentistryyearWidget> {
                                 height: 40.0,
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     24.0, 0.0, 24.0, 0.0),
-                                iconPadding:
-                                    const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 0.0),
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
                                 color:
                                     FlutterFlowTheme.of(context).customColor1,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -270,8 +270,7 @@ class _DentistryyearWidgetState extends State<DentistryyearWidget> {
                 ),
               ),
               Padding(
-                padding:
-                    const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 120.0,
@@ -334,9 +333,8 @@ class _DentistryyearWidgetState extends State<DentistryyearWidget> {
                                 height: 40.0,
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     24.0, 0.0, 24.0, 0.0),
-                                iconPadding:
-                                    const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 0.0),
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
                                 color:
                                     FlutterFlowTheme.of(context).customColor1,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -361,8 +359,7 @@ class _DentistryyearWidgetState extends State<DentistryyearWidget> {
                 ),
               ),
               Padding(
-                padding:
-                    const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 120.0,
@@ -429,9 +426,8 @@ class _DentistryyearWidgetState extends State<DentistryyearWidget> {
                                 height: 40.0,
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     24.0, 0.0, 24.0, 0.0),
-                                iconPadding:
-                                    const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 0.0),
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
                                 color:
                                     FlutterFlowTheme.of(context).customColor1,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -458,8 +454,7 @@ class _DentistryyearWidgetState extends State<DentistryyearWidget> {
               Align(
                 alignment: const AlignmentDirectional(-1.00, 1.00),
                 child: Padding(
-                  padding:
-                      const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 0.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed(
@@ -479,10 +474,10 @@ class _DentistryyearWidgetState extends State<DentistryyearWidget> {
                     ),
                     options: FFButtonOptions(
                       height: 40.0,
-                      padding: const EdgeInsetsDirectional.fromSTEB(
-                          24.0, 0.0, 24.0, 0.0),
-                      iconPadding: const EdgeInsetsDirectional.fromSTEB(
-                          0.0, 0.0, 0.0, 0.0),
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                      iconPadding:
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: Colors.white,
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(

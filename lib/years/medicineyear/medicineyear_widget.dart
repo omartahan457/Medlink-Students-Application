@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+
 import 'medicineyear_model.dart';
 export 'medicineyear_model.dart';
 
@@ -15,6 +16,7 @@ class MedicineyearWidget extends StatefulWidget {
   const MedicineyearWidget({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _MedicineyearWidgetState createState() => _MedicineyearWidgetState();
 }
 
@@ -117,8 +119,7 @@ class _MedicineyearWidgetState extends State<MedicineyearWidget>
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Padding(
-                padding:
-                    const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 1.0),
                 child: Container(
                   width: double.infinity,
                   decoration: const BoxDecoration(
@@ -203,7 +204,7 @@ class _MedicineyearWidgetState extends State<MedicineyearWidget>
                                       .displaySmall
                                       .override(
                                         fontFamily: 'Outfit',
-                                        color: const Color(0xFF4B39EF),
+                                        color: const Color(0xFF246FAE),
                                         fontSize: 32.0,
                                         fontWeight: FontWeight.w600,
                                       ),
@@ -224,14 +225,13 @@ class _MedicineyearWidgetState extends State<MedicineyearWidget>
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                         fontFamily: 'Readex Pro',
                         color: Colors.black,
-                        fontSize: 25.0,
-                        fontWeight: FontWeight.w500,
+                        fontSize: 24.0,
+                        fontWeight: FontWeight.w600,
                       ),
                 ),
               ),
               Padding(
-                padding:
-                    const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 120.0,
@@ -298,9 +298,8 @@ class _MedicineyearWidgetState extends State<MedicineyearWidget>
                                 height: 40.0,
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     24.0, 0.0, 24.0, 0.0),
-                                iconPadding:
-                                    const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 0.0),
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
                                 color:
                                     FlutterFlowTheme.of(context).customColor1,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -326,8 +325,7 @@ class _MedicineyearWidgetState extends State<MedicineyearWidget>
                     animationsMap['containerOnPageLoadAnimation1']!),
               ),
               Padding(
-                padding:
-                    const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 120.0,
@@ -391,9 +389,8 @@ class _MedicineyearWidgetState extends State<MedicineyearWidget>
                                 height: 40.0,
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     24.0, 0.0, 24.0, 0.0),
-                                iconPadding:
-                                    const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 0.0),
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
                                 color:
                                     FlutterFlowTheme.of(context).customColor1,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -419,8 +416,7 @@ class _MedicineyearWidgetState extends State<MedicineyearWidget>
                     animationsMap['containerOnPageLoadAnimation2']!),
               ),
               Padding(
-                padding:
-                    const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   height: 120.0,
@@ -487,9 +483,8 @@ class _MedicineyearWidgetState extends State<MedicineyearWidget>
                                 height: 40.0,
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     24.0, 0.0, 24.0, 0.0),
-                                iconPadding:
-                                    const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 0.0),
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
                                 color:
                                     FlutterFlowTheme.of(context).customColor1,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -517,8 +512,7 @@ class _MedicineyearWidgetState extends State<MedicineyearWidget>
               Align(
                 alignment: const AlignmentDirectional(-1.00, 1.00),
                 child: Padding(
-                  padding:
-                      const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(15.0, 0.0, 0.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed(
@@ -538,10 +532,10 @@ class _MedicineyearWidgetState extends State<MedicineyearWidget>
                     ),
                     options: FFButtonOptions(
                       height: 40.0,
-                      padding: const EdgeInsetsDirectional.fromSTEB(
-                          24.0, 0.0, 24.0, 0.0),
-                      iconPadding: const EdgeInsetsDirectional.fromSTEB(
-                          0.0, 0.0, 0.0, 0.0),
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                      iconPadding:
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: Colors.white,
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(

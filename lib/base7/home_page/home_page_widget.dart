@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:lottie/lottie.dart';
+
 import 'home_page_model.dart';
 export 'home_page_model.dart';
 
@@ -63,8 +64,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(
-                      16.0, 30.0, 16.0, 12.0),
+                  padding:
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 45.0, 16.0, 0.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -128,9 +129,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding:
-                                        const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 4.0, 0.0, 0.0),
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 4.0, 0.0, 0.0),
                                     child: Text(
                                       'Hello ',
                                       style: FlutterFlowTheme.of(context)
@@ -144,9 +144,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding:
-                                        const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 4.0, 0.0, 0.0),
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 4.0, 0.0, 0.0),
                                     child: AuthUserStreamWidget(
                                       builder: (context) => Text(
                                         valueOrDefault(
@@ -172,8 +171,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(
-                      16.0, 20.0, 0.0, 10.0),
+                  padding:
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 0.0, 10.0),
                   child: Text(
                     'Please pick your exam category:',
                     style: FlutterFlowTheme.of(context).headlineSmall.override(
@@ -185,8 +184,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   ),
                 ),
                 Padding(
-                  padding:
-                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 15.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 15.0),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed(
@@ -207,10 +205,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     ),
                     options: FFButtonOptions(
                       height: 55.0,
-                      padding: const EdgeInsetsDirectional.fromSTEB(
-                          24.0, 0.0, 24.0, 0.0),
-                      iconPadding: const EdgeInsetsDirectional.fromSTEB(
-                          0.0, 0.0, 0.0, 0.0),
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                      iconPadding:
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: const Color(0xFFF1F5F8),
                       textStyle: FlutterFlowTheme.of(context)
                           .titleSmall
@@ -252,9 +250,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       MainAxisAlignment.spaceBetween,
                                   children: [
                                     Padding(
-                                      padding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 10.0, 0.0),
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 0.0, 10.0, 0.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
                                         focusColor: Colors.transparent,
@@ -281,8 +278,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           height: 230.0,
                                           decoration: BoxDecoration(
                                             color: const Color(0xFFF1F5F8),
-                                            boxShadow: [
-                                              const BoxShadow(
+                                            boxShadow: const [
+                                              BoxShadow(
                                                 blurRadius: 4.0,
                                                 color: Color(0x33000000),
                                                 offset: Offset(0.0, 2.0),
@@ -307,83 +304,79 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                 repeat: false,
                                                 animate: true,
                                               ),
-                                              SingleChildScrollView(
-                                                scrollDirection:
-                                                    Axis.horizontal,
-                                                child: Row(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.start,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.center,
-                                                  children: [
-                                                    FFButtonWidget(
-                                                      onPressed: () async {
-                                                        context.pushNamed(
-                                                          'Medicineyear',
-                                                          extra: <String,
-                                                              dynamic>{
-                                                            kTransitionInfoKey:
-                                                                const TransitionInfo(
-                                                              hasTransition:
-                                                                  true,
-                                                              transitionType:
-                                                                  PageTransitionType
-                                                                      .leftToRight,
-                                                            ),
-                                                          },
-                                                        );
-                                                      },
-                                                      text: 'Medicine',
-                                                      options: FFButtonOptions(
-                                                        width:
-                                                            MediaQuery.sizeOf(
-                                                                        context)
-                                                                    .width *
-                                                                0.4,
-                                                        height: 70.0,
-                                                        padding:
-                                                            const EdgeInsetsDirectional
-                                                                .fromSTEB(24.0,
-                                                                0.0, 24.0, 0.0),
-                                                        iconPadding:
-                                                            const EdgeInsetsDirectional
-                                                                .fromSTEB(0.0,
-                                                                0.0, 0.0, 0.0),
-                                                        color: const Color(
-                                                            0xFF4260D0),
-                                                        textStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmall,
-                                                        elevation: 3.0,
-                                                        borderSide:
-                                                            const BorderSide(
-                                                          color: Colors
-                                                              .transparent,
-                                                          width: 1.0,
-                                                        ),
-                                                        borderRadius:
-                                                            const BorderRadius
-                                                                .only(
-                                                          bottomLeft:
-                                                              Radius.circular(
-                                                                  30.0),
-                                                          bottomRight:
-                                                              Radius.circular(
-                                                                  30.0),
-                                                          topLeft:
-                                                              Radius.circular(
+                                              Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.start,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.center,
+                                                children: [
+                                                  FFButtonWidget(
+                                                    onPressed: () async {
+                                                      context.pushNamed(
+                                                        'Medicineyear',
+                                                        extra: <String,
+                                                            dynamic>{
+                                                          kTransitionInfoKey:
+                                                              const TransitionInfo(
+                                                            hasTransition: true,
+                                                            transitionType:
+                                                                PageTransitionType
+                                                                    .leftToRight,
+                                                          ),
+                                                        },
+                                                      );
+                                                    },
+                                                    text: 'Medicine',
+                                                    options: FFButtonOptions(
+                                                      width: MediaQuery.sizeOf(
+                                                                  context)
+                                                              .width *
+                                                          0.4,
+                                                      height: 70.0,
+                                                      padding:
+                                                          const EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  24.0,
+                                                                  0.0,
+                                                                  24.0,
                                                                   0.0),
-                                                          topRight:
-                                                              Radius.circular(
+                                                      iconPadding:
+                                                          const EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  0.0,
+                                                                  0.0,
+                                                                  0.0,
                                                                   0.0),
-                                                        ),
+                                                      color: const Color(0xFF4260D0),
+                                                      textStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleSmall,
+                                                      elevation: 3.0,
+                                                      borderSide: const BorderSide(
+                                                        color:
+                                                            Colors.transparent,
+                                                        width: 1.0,
+                                                      ),
+                                                      borderRadius:
+                                                          const BorderRadius.only(
+                                                        bottomLeft:
+                                                            Radius.circular(
+                                                                30.0),
+                                                        bottomRight:
+                                                            Radius.circular(
+                                                                30.0),
+                                                        topLeft:
+                                                            Radius.circular(
+                                                                0.0),
+                                                        topRight:
+                                                            Radius.circular(
+                                                                0.0),
                                                       ),
                                                     ),
-                                                  ],
-                                                ),
+                                                  ),
+                                                ],
                                               ),
                                             ],
                                           ),
@@ -391,9 +384,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              10.0, 0.0, 0.0, 0.0),
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          10.0, 0.0, 0.0, 0.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
                                         focusColor: Colors.transparent,
@@ -420,8 +412,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           height: 230.0,
                                           decoration: BoxDecoration(
                                             color: const Color(0xFFF1F5F8),
-                                            boxShadow: [
-                                              const BoxShadow(
+                                            boxShadow: const [
+                                              BoxShadow(
                                                 blurRadius: 4.0,
                                                 color: Color(0x33000000),
                                                 offset: Offset(0.0, 2.0),
@@ -446,87 +438,82 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                 repeat: false,
                                                 animate: true,
                                               ),
-                                              SingleChildScrollView(
-                                                scrollDirection:
-                                                    Axis.horizontal,
-                                                child: Row(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.center,
-                                                  children: [
-                                                    FFButtonWidget(
-                                                      onPressed: () async {
-                                                        context.pushNamed(
-                                                          'Dentistryyear',
-                                                          extra: <String,
-                                                              dynamic>{
-                                                            kTransitionInfoKey:
-                                                                const TransitionInfo(
-                                                              hasTransition:
-                                                                  true,
-                                                              transitionType:
-                                                                  PageTransitionType
-                                                                      .leftToRight,
-                                                            ),
-                                                          },
-                                                        );
-                                                      },
-                                                      text: 'Dentistry',
-                                                      options: FFButtonOptions(
-                                                        width:
-                                                            MediaQuery.sizeOf(
-                                                                        context)
-                                                                    .width *
-                                                                0.4,
-                                                        height: 70.0,
-                                                        padding:
-                                                            const EdgeInsetsDirectional
-                                                                .fromSTEB(24.0,
-                                                                0.0, 24.0, 0.0),
-                                                        iconPadding:
-                                                            const EdgeInsetsDirectional
-                                                                .fromSTEB(0.0,
-                                                                0.0, 0.0, 0.0),
-                                                        color: const Color(
-                                                            0xFFBCC3D7),
-                                                        textStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmall
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Readex Pro',
-                                                                  color: Colors
-                                                                      .white,
-                                                                ),
-                                                        elevation: 3.0,
-                                                        borderSide:
-                                                            const BorderSide(
-                                                          color: Colors
-                                                              .transparent,
-                                                          width: 1.0,
-                                                        ),
-                                                        borderRadius:
-                                                            const BorderRadius
-                                                                .only(
-                                                          bottomLeft:
-                                                              Radius.circular(
-                                                                  30.0),
-                                                          bottomRight:
-                                                              Radius.circular(
-                                                                  35.0),
-                                                          topLeft:
-                                                              Radius.circular(
+                                              Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.center,
+                                                children: [
+                                                  FFButtonWidget(
+                                                    onPressed: () async {
+                                                      context.pushNamed(
+                                                        'Dentistryyear',
+                                                        extra: <String,
+                                                            dynamic>{
+                                                          kTransitionInfoKey:
+                                                              const TransitionInfo(
+                                                            hasTransition: true,
+                                                            transitionType:
+                                                                PageTransitionType
+                                                                    .leftToRight,
+                                                          ),
+                                                        },
+                                                      );
+                                                    },
+                                                    text: 'Dentistry',
+                                                    options: FFButtonOptions(
+                                                      width: MediaQuery.sizeOf(
+                                                                  context)
+                                                              .width *
+                                                          0.4,
+                                                      height: 70.0,
+                                                      padding:
+                                                          const EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  24.0,
+                                                                  0.0,
+                                                                  24.0,
                                                                   0.0),
-                                                          topRight:
-                                                              Radius.circular(
+                                                      iconPadding:
+                                                          const EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  0.0,
+                                                                  0.0,
+                                                                  0.0,
                                                                   0.0),
-                                                        ),
+                                                      color: const Color(0xFFBCC3D7),
+                                                      textStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleSmall
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Readex Pro',
+                                                                color: Colors
+                                                                    .white,
+                                                              ),
+                                                      elevation: 3.0,
+                                                      borderSide: const BorderSide(
+                                                        color:
+                                                            Colors.transparent,
+                                                      ),
+                                                      borderRadius:
+                                                          const BorderRadius.only(
+                                                        bottomLeft:
+                                                            Radius.circular(
+                                                                30.0),
+                                                        bottomRight:
+                                                            Radius.circular(
+                                                                35.0),
+                                                        topLeft:
+                                                            Radius.circular(
+                                                                0.0),
+                                                        topRight:
+                                                            Radius.circular(
+                                                                0.0),
                                                       ),
                                                     ),
-                                                  ],
-                                                ),
+                                                  ),
+                                                ],
                                               ),
                                             ],
                                           ),
@@ -548,9 +535,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       MainAxisAlignment.spaceBetween,
                                   children: [
                                     Padding(
-                                      padding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 10.0, 0.0),
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 0.0, 10.0, 0.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
                                         focusColor: Colors.transparent,
@@ -577,8 +563,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           height: 230.0,
                                           decoration: BoxDecoration(
                                             color: const Color(0xFFF1F5F8),
-                                            boxShadow: [
-                                              const BoxShadow(
+                                            boxShadow: const [
+                                              BoxShadow(
                                                 blurRadius: 4.0,
                                                 color: Color(0x33000000),
                                                 offset: Offset(0.0, 2.0),
@@ -606,87 +592,83 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                 repeat: false,
                                                 animate: true,
                                               ),
-                                              SingleChildScrollView(
-                                                scrollDirection:
-                                                    Axis.horizontal,
-                                                child: Row(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.center,
-                                                  children: [
-                                                    FFButtonWidget(
-                                                      onPressed: () async {
-                                                        context.pushNamed(
-                                                          'Pharmacyyear',
-                                                          extra: <String,
-                                                              dynamic>{
-                                                            kTransitionInfoKey:
-                                                                const TransitionInfo(
-                                                              hasTransition:
-                                                                  true,
-                                                              transitionType:
-                                                                  PageTransitionType
-                                                                      .leftToRight,
-                                                            ),
-                                                          },
-                                                        );
-                                                      },
-                                                      text: 'Pharmacy',
-                                                      options: FFButtonOptions(
-                                                        width:
-                                                            MediaQuery.sizeOf(
-                                                                        context)
-                                                                    .width *
-                                                                0.4,
-                                                        height: 70.0,
-                                                        padding:
-                                                            const EdgeInsetsDirectional
-                                                                .fromSTEB(24.0,
-                                                                0.0, 24.0, 0.0),
-                                                        iconPadding:
-                                                            const EdgeInsetsDirectional
-                                                                .fromSTEB(0.0,
-                                                                0.0, 0.0, 0.0),
-                                                        color: const Color(
-                                                            0xFF00C63F),
-                                                        textStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmall
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Readex Pro',
-                                                                  color: Colors
-                                                                      .white,
-                                                                ),
-                                                        elevation: 3.0,
-                                                        borderSide:
-                                                            const BorderSide(
-                                                          color: Colors
-                                                              .transparent,
-                                                          width: 1.0,
-                                                        ),
-                                                        borderRadius:
-                                                            const BorderRadius
-                                                                .only(
-                                                          bottomLeft:
-                                                              Radius.circular(
-                                                                  31.0),
-                                                          bottomRight:
-                                                              Radius.circular(
-                                                                  31.0),
-                                                          topLeft:
-                                                              Radius.circular(
+                                              Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.center,
+                                                children: [
+                                                  FFButtonWidget(
+                                                    onPressed: () async {
+                                                      context.pushNamed(
+                                                        'Pharmacyyear',
+                                                        extra: <String,
+                                                            dynamic>{
+                                                          kTransitionInfoKey:
+                                                              const TransitionInfo(
+                                                            hasTransition: true,
+                                                            transitionType:
+                                                                PageTransitionType
+                                                                    .leftToRight,
+                                                          ),
+                                                        },
+                                                      );
+                                                    },
+                                                    text: 'Pharmacy',
+                                                    options: FFButtonOptions(
+                                                      width: MediaQuery.sizeOf(
+                                                                  context)
+                                                              .width *
+                                                          0.4,
+                                                      height: 70.0,
+                                                      padding:
+                                                          const EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  24.0,
+                                                                  0.0,
+                                                                  24.0,
                                                                   0.0),
-                                                          topRight:
-                                                              Radius.circular(
+                                                      iconPadding:
+                                                          const EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  0.0,
+                                                                  0.0,
+                                                                  0.0,
                                                                   0.0),
-                                                        ),
+                                                      color: const Color(0xFF00C63F),
+                                                      textStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleSmall
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Readex Pro',
+                                                                color: Colors
+                                                                    .white,
+                                                              ),
+                                                      elevation: 3.0,
+                                                      borderSide: const BorderSide(
+                                                        color:
+                                                            Colors.transparent,
+                                                        width: 1.0,
+                                                      ),
+                                                      borderRadius:
+                                                          const BorderRadius.only(
+                                                        bottomLeft:
+                                                            Radius.circular(
+                                                                31.0),
+                                                        bottomRight:
+                                                            Radius.circular(
+                                                                31.0),
+                                                        topLeft:
+                                                            Radius.circular(
+                                                                0.0),
+                                                        topRight:
+                                                            Radius.circular(
+                                                                0.0),
                                                       ),
                                                     ),
-                                                  ],
-                                                ),
+                                                  ),
+                                                ],
                                               ),
                                             ],
                                           ),
@@ -694,9 +676,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              10.0, 0.0, 0.0, 0.0),
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          10.0, 0.0, 0.0, 0.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
                                         focusColor: Colors.transparent,
@@ -723,8 +704,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           height: 230.0,
                                           decoration: BoxDecoration(
                                             color: const Color(0xFFF1F5F8),
-                                            boxShadow: [
-                                              const BoxShadow(
+                                            boxShadow: const [
+                                              BoxShadow(
                                                 blurRadius: 4.0,
                                                 color: Color(0x33000000),
                                                 offset: Offset(0.0, 2.0),
@@ -749,87 +730,83 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                 repeat: false,
                                                 animate: true,
                                               ),
-                                              SingleChildScrollView(
-                                                scrollDirection:
-                                                    Axis.horizontal,
-                                                child: Row(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.center,
-                                                  children: [
-                                                    FFButtonWidget(
-                                                      onPressed: () async {
-                                                        context.pushNamed(
-                                                          'Veterinaryyear',
-                                                          extra: <String,
-                                                              dynamic>{
-                                                            kTransitionInfoKey:
-                                                                const TransitionInfo(
-                                                              hasTransition:
-                                                                  true,
-                                                              transitionType:
-                                                                  PageTransitionType
-                                                                      .leftToRight,
-                                                            ),
-                                                          },
-                                                        );
-                                                      },
-                                                      text: 'Veterinary',
-                                                      options: FFButtonOptions(
-                                                        width:
-                                                            MediaQuery.sizeOf(
-                                                                        context)
-                                                                    .width *
-                                                                0.4,
-                                                        height: 70.0,
-                                                        padding:
-                                                            const EdgeInsetsDirectional
-                                                                .fromSTEB(24.0,
-                                                                0.0, 24.0, 0.0),
-                                                        iconPadding:
-                                                            const EdgeInsetsDirectional
-                                                                .fromSTEB(0.0,
-                                                                0.0, 0.0, 0.0),
-                                                        color: const Color(
-                                                            0xFF515C7E),
-                                                        textStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmall
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Readex Pro',
-                                                                  color: Colors
-                                                                      .white,
-                                                                ),
-                                                        elevation: 3.0,
-                                                        borderSide:
-                                                            const BorderSide(
-                                                          color: Colors
-                                                              .transparent,
-                                                          width: 1.0,
-                                                        ),
-                                                        borderRadius:
-                                                            const BorderRadius
-                                                                .only(
-                                                          bottomLeft:
-                                                              Radius.circular(
-                                                                  30.0),
-                                                          bottomRight:
-                                                              Radius.circular(
-                                                                  30.0),
-                                                          topLeft:
-                                                              Radius.circular(
+                                              Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.center,
+                                                children: [
+                                                  FFButtonWidget(
+                                                    onPressed: () async {
+                                                      context.pushNamed(
+                                                        'Veterinaryyear',
+                                                        extra: <String,
+                                                            dynamic>{
+                                                          kTransitionInfoKey:
+                                                              const TransitionInfo(
+                                                            hasTransition: true,
+                                                            transitionType:
+                                                                PageTransitionType
+                                                                    .leftToRight,
+                                                          ),
+                                                        },
+                                                      );
+                                                    },
+                                                    text: 'Veterinary',
+                                                    options: FFButtonOptions(
+                                                      width: MediaQuery.sizeOf(
+                                                                  context)
+                                                              .width *
+                                                          0.4,
+                                                      height: 70.0,
+                                                      padding:
+                                                          const EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  24.0,
+                                                                  0.0,
+                                                                  24.0,
                                                                   0.0),
-                                                          topRight:
-                                                              Radius.circular(
+                                                      iconPadding:
+                                                          const EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  0.0,
+                                                                  0.0,
+                                                                  0.0,
                                                                   0.0),
-                                                        ),
+                                                      color: const Color(0xFF515C7E),
+                                                      textStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleSmall
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Readex Pro',
+                                                                color: Colors
+                                                                    .white,
+                                                              ),
+                                                      elevation: 3.0,
+                                                      borderSide: const BorderSide(
+                                                        color:
+                                                            Colors.transparent,
+                                                        width: 1.0,
+                                                      ),
+                                                      borderRadius:
+                                                          const BorderRadius.only(
+                                                        bottomLeft:
+                                                            Radius.circular(
+                                                                30.0),
+                                                        bottomRight:
+                                                            Radius.circular(
+                                                                30.0),
+                                                        topLeft:
+                                                            Radius.circular(
+                                                                0.0),
+                                                        topRight:
+                                                            Radius.circular(
+                                                                0.0),
                                                       ),
                                                     ),
-                                                  ],
-                                                ),
+                                                  ),
+                                                ],
                                               ),
                                             ],
                                           ),
@@ -846,78 +823,81 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     ],
                   ),
                 ),
-                Padding(
-                  padding:
-                      const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      Card(
-                        clipBehavior: Clip.antiAliasWithSaveLayer,
-                        color: const Color(0xFFF6F6F6),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(40.0),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              2.0, 2.0, 2.0, 2.0),
-                          child: ClipRRect(
+                Align(
+                  alignment: const AlignmentDirectional(-1.00, 1.00),
+                  child: Padding(
+                    padding:
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 15.0, 0.0, 10.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Card(
+                          clipBehavior: Clip.antiAliasWithSaveLayer,
+                          color: const Color(0xFFF6F6F6),
+                          shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(40.0),
-                            child: Image.asset(
-                              'assets/images/Medlink-App.png',
-                              width: 60.0,
-                              height: 60.0,
-                              fit: BoxFit.cover,
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                2.0, 2.0, 2.0, 2.0),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(40.0),
+                              child: Image.asset(
+                                'assets/images/Medlink-App.png',
+                                width: 60.0,
+                                height: 60.0,
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            15.0, 0.0, 0.0, 0.0),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 4.0, 0.0, 0.0),
-                              child: Text(
-                                'Medlink Students Ltd',
-                                textAlign: TextAlign.center,
-                                style: FlutterFlowTheme.of(context)
-                                    .labelMedium
-                                    .override(
-                                      fontFamily: 'Plus Jakarta Sans',
-                                      color: Colors.black,
-                                      fontSize: 14.0,
-                                      fontWeight: FontWeight.w800,
-                                    ),
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              15.0, 0.0, 0.0, 0.0),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 4.0, 0.0, 0.0),
+                                child: Text(
+                                  'Medlink Students Ltd',
+                                  textAlign: TextAlign.center,
+                                  style: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .override(
+                                        fontFamily: 'Plus Jakarta Sans',
+                                        color: Colors.black,
+                                        fontSize: 14.0,
+                                        fontWeight: FontWeight.w800,
+                                      ),
+                                ),
                               ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 4.0, 0.0, 0.0),
-                              child: Text(
-                                'All copyrights reserved 2023  ©',
-                                textAlign: TextAlign.center,
-                                style: FlutterFlowTheme.of(context)
-                                    .labelMedium
-                                    .override(
-                                      fontFamily: 'Plus Jakarta Sans',
-                                      color: Colors.black,
-                                      fontSize: 14.0,
-                                      fontWeight: FontWeight.w800,
-                                      decoration: TextDecoration.underline,
-                                    ),
+                              Padding(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 4.0, 0.0, 0.0),
+                                child: Text(
+                                  'All copyrights reserved 2023  ©',
+                                  textAlign: TextAlign.center,
+                                  style: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .override(
+                                        fontFamily: 'Plus Jakarta Sans',
+                                        color: Colors.black,
+                                        fontSize: 14.0,
+                                        fontWeight: FontWeight.w800,
+                                        decoration: TextDecoration.underline,
+                                      ),
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ],
