@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -14,7 +16,6 @@ class DentistryyearWidget extends StatefulWidget {
   const DentistryyearWidget({super.key});
 
   @override
-  // ignore: library_private_types_in_public_api
   _DentistryyearWidgetState createState() => _DentistryyearWidgetState();
 }
 
@@ -150,7 +151,7 @@ class _DentistryyearWidgetState extends State<DentistryyearWidget> {
                                       .displaySmall
                                       .override(
                                         fontFamily: 'Outfit',
-                                        color: const Color(0xFF4B39EF),
+                                        color: const Color(0xFF246FAE),
                                         fontSize: 32.0,
                                         fontWeight: FontWeight.w600,
                                       ),

@@ -74,16 +74,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     hoverColor: Colors.transparent,
                     highlightColor: Colors.transparent,
                     onTap: () async {
-                      context.pushNamed(
-                        'StudentProfile',
-                        extra: <String, dynamic>{
-                          kTransitionInfoKey: const TransitionInfo(
-                            hasTransition: true,
-                            transitionType: PageTransitionType.bottomToTop,
-                            duration: Duration(milliseconds: 2),
-                          ),
-                        },
-                      );
+                      context.pushNamed('StudentProfile');
                     },
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
@@ -360,10 +351,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           const BorderRadius.only(
                                                         bottomLeft:
                                                             Radius.circular(
-                                                                30.0),
+                                                                28.0),
                                                         bottomRight:
                                                             Radius.circular(
-                                                                30.0),
+                                                                28.0),
                                                         topLeft:
                                                             Radius.circular(
                                                                 0.0),
@@ -492,10 +483,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           const BorderRadius.only(
                                                         bottomLeft:
                                                             Radius.circular(
-                                                                30.0),
+                                                                28.0),
                                                         bottomRight:
                                                             Radius.circular(
-                                                                30.0),
+                                                                28.0),
                                                         topLeft:
                                                             Radius.circular(
                                                                 0.0),
@@ -642,10 +633,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           const BorderRadius.only(
                                                         bottomLeft:
                                                             Radius.circular(
-                                                                30.0),
+                                                                28.0),
                                                         bottomRight:
                                                             Radius.circular(
-                                                                30.0),
+                                                                28.0),
                                                         topLeft:
                                                             Radius.circular(
                                                                 0.0),
@@ -775,10 +766,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           const BorderRadius.only(
                                                         bottomLeft:
                                                             Radius.circular(
-                                                                30.0),
+                                                                28.0),
                                                         bottomRight:
                                                             Radius.circular(
-                                                                30.0),
+                                                                28.0),
                                                         topLeft:
                                                             Radius.circular(
                                                                 0.0),
