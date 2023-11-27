@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -272,9 +274,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           );
                                         },
                                         child: Container(
-                                          width:
-                                              MediaQuery.sizeOf(context).width *
-                                                  0.4,
+                                          width: 160.0,
                                           height: 230.0,
                                           decoration: BoxDecoration(
                                             color: const Color(0xFFF1F5F8),
@@ -329,10 +329,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     },
                                                     text: 'Medicine',
                                                     options: FFButtonOptions(
-                                                      width: MediaQuery.sizeOf(
-                                                                  context)
-                                                              .width *
-                                                          0.4,
+                                                      width: 158.0,
                                                       height: 70.0,
                                                       padding:
                                                           const EdgeInsetsDirectional
@@ -406,9 +403,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           );
                                         },
                                         child: Container(
-                                          width:
-                                              MediaQuery.sizeOf(context).width *
-                                                  0.395,
+                                          width: 160.0,
                                           height: 230.0,
                                           decoration: BoxDecoration(
                                             color: const Color(0xFFF1F5F8),
@@ -461,10 +456,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     },
                                                     text: 'Dentistry',
                                                     options: FFButtonOptions(
-                                                      width: MediaQuery.sizeOf(
-                                                                  context)
-                                                              .width *
-                                                          0.4,
+                                                      width: 158.0,
                                                       height: 70.0,
                                                       padding:
                                                           const EdgeInsetsDirectional
@@ -503,7 +495,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                 30.0),
                                                         bottomRight:
                                                             Radius.circular(
-                                                                35.0),
+                                                                30.0),
                                                         topLeft:
                                                             Radius.circular(
                                                                 0.0),
@@ -557,9 +549,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           );
                                         },
                                         child: Container(
-                                          width:
-                                              MediaQuery.sizeOf(context).width *
-                                                  0.395,
+                                          width: 160.0,
                                           height: 230.0,
                                           decoration: BoxDecoration(
                                             color: const Color(0xFFF1F5F8),
@@ -615,10 +605,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     },
                                                     text: 'Pharmacy',
                                                     options: FFButtonOptions(
-                                                      width: MediaQuery.sizeOf(
-                                                                  context)
-                                                              .width *
-                                                          0.4,
+                                                      width: 158.0,
                                                       height: 70.0,
                                                       padding:
                                                           const EdgeInsetsDirectional
@@ -655,10 +642,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                           const BorderRadius.only(
                                                         bottomLeft:
                                                             Radius.circular(
-                                                                31.0),
+                                                                30.0),
                                                         bottomRight:
                                                             Radius.circular(
-                                                                31.0),
+                                                                30.0),
                                                         topLeft:
                                                             Radius.circular(
                                                                 0.0),
@@ -698,9 +685,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           );
                                         },
                                         child: Container(
-                                          width:
-                                              MediaQuery.sizeOf(context).width *
-                                                  0.395,
+                                          width: 160.0,
                                           height: 230.0,
                                           decoration: BoxDecoration(
                                             color: const Color(0xFFF1F5F8),
@@ -753,10 +738,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     },
                                                     text: 'Veterinary',
                                                     options: FFButtonOptions(
-                                                      width: MediaQuery.sizeOf(
-                                                                  context)
-                                                              .width *
-                                                          0.4,
+                                                      width: 158.0,
                                                       height: 70.0,
                                                       padding:
                                                           const EdgeInsetsDirectional
