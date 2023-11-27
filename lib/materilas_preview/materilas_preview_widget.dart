@@ -86,19 +86,18 @@ class _MaterilasPreviewWidgetState extends State<MaterilasPreviewWidget> {
                       fontSize: 22.0,
                     ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: false,
               elevation: 2.0,
             ),
             body: SafeArea(
               top: true,
-              child: Column(
-                mainAxisSize: MainAxisSize.max,
+              child: Stack(
                 children: [
                   FlutterFlowWebView(
                     content: widget.iFrame!,
                     width: MediaQuery.sizeOf(context).width * 1.0,
-                    height: MediaQuery.sizeOf(context).height * 0.85,
+                    height: MediaQuery.sizeOf(context).height * 0.8,
                     verticalScroll: false,
                     horizontalScroll: false,
                   ),
