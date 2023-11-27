@@ -2,6 +2,7 @@ import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:async';
 import '/custom_code/actions/index.dart' as actions;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -194,23 +195,16 @@ class _PrivacyAndPolicyWidgetState extends State<PrivacyAndPolicyWidget> {
                                   currentUserUid,
                                   'MedlinkStudentsDB',
                                 );
-                                await actions.updatematKey(
-                                  currentUserUid,
-                                  'MedlinkStudentsDB',
+                                unawaited(
+                                  () async {
+                                    await actions.updatematKey(
+                                      currentUserUid,
+                                      'MedlinkStudentsDB',
+                                    );
+                                  }(),
                                 );
-                                await Future.delayed(
-                                    const Duration(milliseconds: 2000));
 
-                                context.pushNamed(
-                                  'HomePage',
-                                  extra: <String, dynamic>{
-                                    kTransitionInfoKey: const TransitionInfo(
-                                      hasTransition: true,
-                                      transitionType:
-                                          PageTransitionType.rightToLeft,
-                                    ),
-                                  },
-                                );
+                                context.pushNamed('HomePage');
                               },
                               text: 'I Agree',
                               options: FFButtonOptions(
