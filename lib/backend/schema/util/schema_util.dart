@@ -25,13 +25,10 @@ dynamic deserializeStructParam<T>(
   if (param == null) {
     return null;
   } else if (isList) {
-    final paramValues;
+    List<dynamic> paramValues;
     try {
       paramValues = param is Iterable ? param : json.decode(param);
     } catch (e) {
-      return null;
-    }
-    if (paramValues is! Iterable) {
       return null;
     }
     return paramValues
@@ -57,8 +54,8 @@ List<T>? getStructList<T>(
     value is! List
         ? null
         : value
-            .where((e) => e is Map<String, dynamic>)
-            .map((e) => structBuilder(e as Map<String, dynamic>))
+            .whereType<Map<String, dynamic>>()
+            .map((e) => structBuilder(e))
             .toList();
 
 Color? getSchemaColor(dynamic value) => value is String
@@ -78,10 +75,10 @@ T? castToType<T>(dynamic value) {
     return null;
   }
   switch (T) {
-    case double:
+    case const (double):
       // Doubles may be stored as ints in some cases.
       return value.toDouble() as T;
-    case int:
+    case const (int):
       // Likewise, ints may be stored as doubles. If this is the case
       // (i.e. no decimal value), return the value as an int.
       if (value is num && value.toInt() == value) {
