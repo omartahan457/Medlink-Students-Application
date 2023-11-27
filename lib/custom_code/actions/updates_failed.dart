@@ -1,4 +1,6 @@
 // Automatic FlutterFlow imports
+import 'package:flutter/material.dart';
+
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 // Imports other custom actions
@@ -31,7 +33,7 @@ Future updatesFailed(String userData, String userCollectionData) async {
   await studentRef.update({'score': newScore});
   await studentRef.update({'index': newIndex});
 
-  print('FailedTest updated to $newFailed');
-  print('total updated to $newTotal');
-  print('score updated to $newScore');
+  debugPrint('FailedTest updated to $newFailed');
+  debugPrint('total updated to $newTotal');
+  debugPrint('score updated to $newScore');
 }

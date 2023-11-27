@@ -1475,9 +1475,6 @@ class _CoratiaUkraineWidgetState extends State<CoratiaUkraineWidget> {
                                           padding: const EdgeInsetsDirectional
                                               .fromSTEB(10.0, 0.0, 10.0, 0.0),
                                           child: RichText(
-                                            textScaleFactor:
-                                                MediaQuery.of(context)
-                                                    .textScaleFactor,
                                             text: TextSpan(
                                               children: [
                                                 TextSpan(
@@ -1506,7 +1503,8 @@ class _CoratiaUkraineWidgetState extends State<CoratiaUkraineWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium,
                                             ),
-                                            textAlign: TextAlign.center,
+                                            textAlign: TextAlign.center, textScaler: TextScaler.linear(MediaQuery.of(context)
+                                                    .textScaleFactor),
                                           ),
                                         ),
                                       ],

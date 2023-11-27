@@ -1,4 +1,6 @@
 // Automatic FlutterFlow imports
+import 'package:flutter/material.dart';
+
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 // Imports other custom actions
@@ -21,5 +23,5 @@ Future updateagreeState(String userData, String userCollectionData) async {
   // Update the score on Firebase
   await studentRef.update({'agreeState': newagreeState});
 
-  print('agreeState updated to $newagreeState');
+  debugPrint('agreeState updated to $newagreeState');
 }
