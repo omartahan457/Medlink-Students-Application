@@ -110,7 +110,7 @@ class _PrivacyAndPolicyWidgetState extends State<PrivacyAndPolicyWidget> {
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(15.0, 10.0, 15.0, 0.0),
                     child: Text(
-                      'This entrance exam material (\"Material\") is exclusively provided for the personal use of Medlink Students\' clients. Any reproduction, distribution, public display, or modification of this Material, in whole or in part, without the express written consent of Medlink Students is strictly prohibited.\n',
+                      'This entrance exam material ("Material") is exclusively provided for the personal use of Medlink Students\' clients. Any reproduction, distribution, public display, or modification of this Material, in whole or in part, without the express written consent of Medlink Students is strictly prohibited.\n',
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
