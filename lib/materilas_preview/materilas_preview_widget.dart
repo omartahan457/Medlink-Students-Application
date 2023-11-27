@@ -4,14 +4,15 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_web_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
 import 'materilas_preview_model.dart';
 export 'materilas_preview_model.dart';
 
 class MaterilasPreviewWidget extends StatefulWidget {
   const MaterilasPreviewWidget({
-    Key? key,
+    super.key,
     required this.iFrame,
-  }) : super(key: key);
+  });
 
   final String? iFrame;
 
@@ -85,7 +86,7 @@ class _MaterilasPreviewWidgetState extends State<MaterilasPreviewWidget> {
                       fontSize: 22.0,
                     ),
               ),
-              actions: const [],
+              actions: [],
               centerTitle: false,
               elevation: 2.0,
             ),
@@ -97,7 +98,7 @@ class _MaterilasPreviewWidgetState extends State<MaterilasPreviewWidget> {
                   FlutterFlowWebView(
                     content: widget.iFrame!,
                     width: MediaQuery.sizeOf(context).width * 1.0,
-                    height: MediaQuery.sizeOf(context).height * 0.9,
+                    height: MediaQuery.sizeOf(context).height * 0.85,
                     verticalScroll: false,
                     horizontalScroll: false,
                   ),

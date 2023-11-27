@@ -11,7 +11,7 @@ import 'welcomescreen_model.dart';
 export 'welcomescreen_model.dart';
 
 class WelcomescreenWidget extends StatefulWidget {
-  const WelcomescreenWidget({Key? key}) : super(key: key);
+  const WelcomescreenWidget({super.key});
 
   @override
   _WelcomescreenWidgetState createState() => _WelcomescreenWidgetState();

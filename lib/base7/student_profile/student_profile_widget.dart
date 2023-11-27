@@ -8,7 +8,7 @@ import 'student_profile_model.dart';
 export 'student_profile_model.dart';
 
 class StudentProfileWidget extends StatefulWidget {
-  const StudentProfileWidget({Key? key}) : super(key: key);
+  const StudentProfileWidget({super.key});
 
   @override
   _StudentProfileWidgetState createState() => _StudentProfileWidgetState();

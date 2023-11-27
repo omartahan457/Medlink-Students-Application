@@ -10,7 +10,7 @@ import 'slovakia_model.dart';
 export 'slovakia_model.dart';
 
 class SlovakiaWidget extends StatefulWidget {
-  const SlovakiaWidget({Key? key}) : super(key: key);
+  const SlovakiaWidget({super.key});
 
   @override
   _SlovakiaWidgetState createState() => _SlovakiaWidgetState();
