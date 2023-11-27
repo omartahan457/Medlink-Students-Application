@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api, deprecated_member_use
+
 import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -3873,9 +3875,6 @@ class _BulgariaWidgetState extends State<BulgariaWidget> {
                                           padding: const EdgeInsetsDirectional
                                               .fromSTEB(10.0, 0.0, 10.0, 0.0),
                                           child: RichText(
-                                            textScaleFactor:
-                                                MediaQuery.of(context)
-                                                    .textScaleFactor,
                                             text: TextSpan(
                                               children: [
                                                 TextSpan(
@@ -3914,7 +3913,8 @@ class _BulgariaWidgetState extends State<BulgariaWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .bodyMedium,
                                             ),
-                                            textAlign: TextAlign.center,
+                                            textAlign: TextAlign.center, textScaler: TextScaler.linear(MediaQuery.of(context)
+                                                    .textScaleFactor),
                                           ),
                                         ),
                                       ],

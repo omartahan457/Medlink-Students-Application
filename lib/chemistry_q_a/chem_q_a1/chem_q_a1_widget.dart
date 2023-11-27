@@ -1,4 +1,4 @@
-// ignore_for_file: library_private_types_in_public_api
+// ignore_for_file: library_private_types_in_public_api, deprecated_member_use
 
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
@@ -99,8 +99,6 @@ class _ChemQA1WidgetState extends State<ChemQA1Widget> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           RichText(
-                            textScaleFactor:
-                                MediaQuery.of(context).textScaleFactor,
                             text: TextSpan(
                               children: [
                                 TextSpan(
@@ -130,7 +128,7 @@ class _ChemQA1WidgetState extends State<ChemQA1Widget> {
                                     fontFamily: 'Readex Pro',
                                     fontSize: 20.0,
                                   ),
-                            ),
+                            ), textScaler: TextScaler.linear(MediaQuery.of(context).textScaleFactor),
                           ),
                           Column(
                             mainAxisSize: MainAxisSize.max,

@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import '/backend/firebase_storage/storage.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';

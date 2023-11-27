@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously, deprecated_member_use, library_private_types_in_public_api
+
 import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -106,7 +108,6 @@ class _PassedWidgetState extends State<PassedWidget> {
                     padding: const EdgeInsetsDirectional.fromSTEB(
                         0.0, 0.0, 0.0, 20.0),
                     child: RichText(
-                      textScaleFactor: MediaQuery.of(context).textScaleFactor,
                       text: TextSpan(
                         children: [
                           TextSpan(
@@ -138,7 +139,7 @@ class _PassedWidgetState extends State<PassedWidget> {
                           )
                         ],
                         style: FlutterFlowTheme.of(context).bodyMedium,
-                      ),
+                      ), textScaler: TextScaler.linear(MediaQuery.of(context).textScaleFactor),
                     ),
                   ),
                   Padding(

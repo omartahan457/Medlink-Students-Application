@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api, deprecated_member_use, use_build_context_synchronously
+
 import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -154,8 +156,6 @@ class _CorrectChemWidgetState extends State<CorrectChemWidget> {
                                         const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 30.0, 0.0, 30.0),
                                     child: RichText(
-                                      textScaleFactor: MediaQuery.of(context)
-                                          .textScaleFactor,
                                       text: TextSpan(
                                         children: [
                                           TextSpan(
@@ -174,7 +174,8 @@ class _CorrectChemWidgetState extends State<CorrectChemWidget> {
                                         ],
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium,
-                                      ),
+                                      ), textScaler: TextScaler.linear(MediaQuery.of(context)
+                                          .textScaleFactor),
                                     ),
                                   ),
                                   Padding(
